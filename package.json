@@ -1,0 +1,23 @@
+{
+  "name": "ls-command",
+  "version": "1.0.0",
+  "description": "This is my interpretation of the ls command created with node. It's a customised command that will list all the files in a directory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatgirldorian/ls-command.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "dls": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/thatgirldorian/ls-command/issues"
+  },
+  "homepage": "https://github.com/thatgirldorian/ls-command#readme"
+}
