@@ -5,13 +5,17 @@
 import fs from 'fs'
 import util from 'util'
 import chalk from 'chalk'
+import path from 'path'
 
 console.log(chalk.blue('Hello world!'));
 //add an lstat method
 const { lstat } = fs.promises
 
+//allow our dls command to accept other cmd arguments
+const targetDir = process.argv[2] || process.cwd()
+
 //open up the current directory we're in
-fs.readdir(process.cwd(), async (err, filenames) => {
+fs.readdir(targetDir, async (err, filenames) => {
     
     if (err) {
         //handle the error
@@ -20,7 +24,7 @@ fs.readdir(process.cwd(), async (err, filenames) => {
 
     //map over the filenames array for each filename
     const statPromises = filenames.map(filename => {
-        return lstat(filename)
+        return lstat(path.join(targetDir, filename))
     })
 
     //this comprises all the stats objects available
