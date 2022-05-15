@@ -16,8 +16,12 @@
   "bin": {
     "dls": "index.js"
   },
+  "type": "module",
   "bugs": {
     "url": "https://github.com/thatgirldorian/ls-command/issues"
   },
-  "homepage": "https://github.com/thatgirldorian/ls-command#readme"
+  "homepage": "https://github.com/thatgirldorian/ls-command#readme",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
 }

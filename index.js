@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 //add a comment to run the dls command in our bin as an executable command 
 
-//require the file system module
-const fs = require('fs')
+//require the file system module & the chalk package
+import fs from 'fs'
+import util from 'util'
+import chalk from 'chalk'
 
+console.log(chalk.blue('Hello world!'));
 //add an lstat method
 const { lstat } = fs.promises
 
@@ -27,7 +30,13 @@ fs.readdir(process.cwd(), async (err, filenames) => {
         const index = allStats.indexOf(stats)
 
         //check whether the object is a file or a directory
-        console.log(filenames[index],stats.isFile())
+        if (stats.isFile() === true) {
+            console.log(chalk.magenta(filenames[index]))
+        } else {
+            console.log(chalk.cyan(filenames[index]))
+        }
+        // console.log(filenames[index],stats.isFile())
+        
     }
 } )
 
