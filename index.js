@@ -7,7 +7,7 @@ import util from 'util'
 import chalk from 'chalk'
 import path from 'path'
 
-console.log(chalk.blue('Hello world!'));
+
 //add an lstat method
 const { lstat } = fs.promises
 
