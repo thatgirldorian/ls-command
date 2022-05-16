@@ -9,13 +9,10 @@ I resolved this by adding the line, <strong>"type": "module"</strong> to my pack
 
 <h3>Technology used:</h3>
 
-- HTML
-- CSS
 - JavaScript
 - GitHub
-- Netlify
 - The Chalk package
 
-<h3>Link to site:</h3>
 
 <h3>Screenshot:</h3>
+<img width="580" alt="Screen Shot 2022-05-15 at 6 45 31 PM" src="https://user-images.githubusercontent.com/40691059/168478791-c13142a0-285b-4925-8cce-9097609dfa20.png">
